@@ -13,7 +13,8 @@ const ViewMore = () => {
   // console.log(productId)
   let [oneProduct, setOneProduct] = useState({})
   let fetchApi = async () => {
-    let response = await axios.get(`http://localhost:4000/products/${productId}`)
+    // let response = await axios.get(`http://localhost:4000/products/${productId}`)
+    let response = await axios.get(`https://ecommerce-api-5g2x.onrender.com/products/${productId}`)
     setOneProduct(response.data)
   }
 
@@ -33,7 +34,8 @@ const ViewMore = () => {
   let handleDelete = () => {
     let bool = window.confirm(`do you want to delete this Product...?`)
     if (bool) {
-      axios.delete(`http://localhost:4000/products/${productId}`)
+      // axios.delete(`http://localhost:4000/products/${productId}`)
+      axios.delete(`https://ecommerce-api-5g2x.onrender.com/products/${productId}`)
       // alert('Product is Deleted')
       toast.info('Product is Deleted')
       navigate('/')
@@ -51,7 +53,8 @@ const ViewMore = () => {
 
     let bool = window.confirm(`do you want Add the product to the cart...?`)
     if (bool) {
-      axios.post(`http://localhost:4000/cartitems`, oneProduct)
+      // axios.post(`http://localhost:4000/cartitems`, oneProduct)
+      axios.post(`https://ecommerce-api-5g2x.onrender.com/cartitems`, oneProduct)
       toast.success('Product is Added')
     }
     else {
