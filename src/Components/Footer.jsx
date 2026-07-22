@@ -25,7 +25,7 @@ const Footer = () => {
 
                 <div className="footer-box">
                     <h2>
-                        <img src="/public/images/e-commerce-logo.png" alt="E-Store Logo" /> <span>E</span> STORE
+                        <img src="/images/e-commerce-logo.png" alt="E-Store Logo" /> <span>E</span> STORE
                     </h2>
 
                     <p>

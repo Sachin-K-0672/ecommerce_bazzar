@@ -15,7 +15,7 @@ const Header = () => {
     <>
       <div className="header-part">
         <div className="logo" onClick={()=>navigate('/')}>
-            <img src="./public/images/e-commerce-logo.png" alt="" />
+            <img src="/images/e-commerce-logo.png" alt="" />
         </div>
         <div className="search">
             <form action="">
