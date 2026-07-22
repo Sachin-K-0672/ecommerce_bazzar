@@ -8,7 +8,7 @@ import ViewMore from './Components/ViewMore'
 import CartItems from './Components/CartItems'
 import Footer from './Components/Footer'
 import Login from './Components/Login'
-import Register from "./components/Register";
+import Register from "./Components/Register";
 
 
 // npx json-server --watch src/jsondata/appdata.json --port 4000  (command for create api using json server)
