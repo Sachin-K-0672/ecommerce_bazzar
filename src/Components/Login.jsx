@@ -26,7 +26,8 @@ const Login = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        const response = await axios.get("http://localhost:4000/users");
+        // const response = await axios.get("http://localhost:4000/users");
+        const response = await axios.get("https://ecommerce-api-5g2x.onrender.com/users");
         const users = response.data;
 
         let user = null;

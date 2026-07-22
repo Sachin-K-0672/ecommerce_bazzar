@@ -35,7 +35,8 @@ const Register = () => {
             return;
         }
 
-        const response = await axios.get("http://localhost:4000/users");
+        // const response = await axios.get("http://localhost:4000/users");
+        const response = await axios.get("https://ecommerce-api-5g2x.onrender.com/users");
         const users = response.data;
 
         let alreadyExists = false;
@@ -54,7 +55,8 @@ const Register = () => {
             return;
         }
 
-        await axios.post("http://localhost:4000/users", {
+        // await axios.post("http://localhost:4000/users", {
+        await axios.post("https://ecommerce-api-5g2x.onrender.com/users", {
             name: formData.name,
             email: formData.email,
             password: formData.password

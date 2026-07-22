@@ -9,7 +9,8 @@ import { useNavigate } from 'react-router-dom';
 const CartItems = () => {
   let [cartProduct, setCartProduct] = useState([])
   let fetchApi = async () => {
-    let response = await axios.get('http://localhost:4000/cartitems')
+    // let response = await axios.get('http://localhost:4000/cartitems')
+    let response = await axios.get('https://ecommerce-api-5g2x.onrender.com/cartitems')
     setCartProduct(response.data)
 
   }
@@ -31,7 +32,8 @@ const CartItems = () => {
     const bool = window.confirm("Do you want to delete this product?");
 
     if (bool) {
-      await axios.delete(`http://localhost:4000/cartitems/${id}`);
+      // await axios.delete(`http://localhost:4000/cartitems/${id}`);
+      await axios.delete(`https://ecommerce-api-5g2x.onrender.com/cartitems/${id}`);
       toast.info('Product is Deleted')
       fetchApi(); // Reload the cart
     }
