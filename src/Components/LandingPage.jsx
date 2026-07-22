@@ -5,7 +5,8 @@ import { useNavigate } from 'react-router-dom'
 const LandingPage = () => {
   let [apidata,setApidata]=useState([])
   let fetchApi =async ()=>{
-  let response=await axios.get('http://localhost:4000/products')
+  // let response=await axios.get('http://localhost:4000/products')
+  let response=await axios.get('https://fakestoreapi.com/products')
   setApidata(response.data)
   }
 
