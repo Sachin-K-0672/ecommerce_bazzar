@@ -1,5 +1,7 @@
 # 🛒 E-Commerce Bazaar 
 
+🌐 Live Demo: <https://sachin-ecommerce-bazzar.netlify.app/>
+
 ![React](https://img.shields.io/badge/React-19-blue?logo=react)
 ![Vite](https://img.shields.io/badge/Vite-Latest-purple?logo=vite)
 ![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow?logo=javascript)
@@ -213,6 +215,7 @@ The following screenshots showcase the application's desktop and mobile responsi
 💻 **GitHub:** <https://github.com/Sachin-K-0672>
 
 💼 **LinkedIn:** <https://www.linkedin.com/in/sachin-k-3865a8380/>
+🌐 Live Demo: ** <https://sachin-ecommerce-bazzar.netlify.app/>
 
 ---
 
